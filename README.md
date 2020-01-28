@@ -17,9 +17,6 @@ $ cd GAP
 $ bash run.sh
 ```
 
-#### Input formats
-Edge list or Adjacency list
-
 ### Possible Parameters
 
 
