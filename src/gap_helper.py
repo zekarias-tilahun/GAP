@@ -55,11 +55,11 @@ def visualize_attention(nodes, weights):
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--input', default='../data/cora/graph.txt', type=str,
+    parser.add_argument('--input', default='', type=str,
                         help='Path to the graph file')
     parser.add_argument('--fmt', type=str, default='edgelist',
                         help="Format ('edgelist-Default', 'adjlist') of the input graph file. ")
-    parser.add_argument('--output-dir', type=str, default="../data/cora/outputs/",
+    parser.add_argument('--output-dir', type=str, default="",
                         help='Path to save outputs, mainly the embedding file.')
     parser.add_argument('--dim', type=int, default=200,
                         help='Embedding dimension. Default is 200')
@@ -75,8 +75,9 @@ def parse_args():
                         help='The dropout rate. Default is 0.5')
     parser.add_argument('--nbr-size', type=int, default=100,
                         help='The maximum neighborhood size. Default is 100')
-    parser.add_argument('--directed', type=bool, default=True,
-                        help='Whether the graph is directed. Default is false')
+    parser.add_argument('--directed', type=int, default=1,
+                        help='Whether the graph is directed. 0 - undirected, 1- directed. Default is 1
+                        ')
     parser.add_argument('--verbose', type=int,
-                        default=1, help="Turn logging on or off")
+                        default=1, help="Turn logging on or off - (0 - off, Any value - on). Default is 1")
     return parser.parse_args()

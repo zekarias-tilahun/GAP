@@ -15,11 +15,15 @@ import os
 
 def to_cpu_tensor(tensor, device):
     if device == 'cpu':
-        return tensor
+        return tensor.data.numpy()
     return tensor.cpu().data.numpy()
 
 
 class GapWrapper:
+    
+    """
+    A wrapper around the GAP model used for training, validating, and saving the model
+    """
 
     def __init__(self, args):
         self._args = args
@@ -56,7 +60,7 @@ class GapWrapper:
             dev_inputs = self.data.dev_inputs
         else:
             """
-            We create multiple copies of the training and dev batche iterators.
+            We create multiple copies of the training and dev batch iterators.
             Useful when the training input is large, > 100000 edges
             """
             train_inputs = tee(self.data.train_inputs, args.epochs)

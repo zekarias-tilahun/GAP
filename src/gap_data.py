@@ -16,6 +16,12 @@ def source_targets(edges): return [list(lor_edges) for lor_edges in zip(*edges)]
 
 
 def _get_mask(arr):
+    """
+    Creates a mask for the input array. It will be used to mask the effect of zero-padding in the softmax
+    computation of the attention weights.
+    :param arr: The zero padded neighborhood array
+    :return: A mask array
+    """
     neg_inf = -99999999.
     mask = (arr != 0)
     mask = mask.astype('float')
@@ -25,6 +31,15 @@ def _get_mask(arr):
 
 
 def _sample_neighborhood(nbr_size, g):
+    """
+    Samples a fixed number of (nbr_size) neighbors for every node in the graph.
+    For nodes with smaller number of neighbors, the neighborhood will be padded with zero
+
+    :param nbr_size: The neighborhood size
+    :param g: The input graph
+    :return: An n x nbr_size neighborhood matrix
+    """
+    
     nodes = list(g.nodes())
     neighborhood_matrix = np.zeros(shape=(len(nodes), nbr_size))
     for n in nodes:
@@ -102,7 +117,7 @@ class Data:
         """
         Maskings
             Masking 1. The first masking ensures that no node from the test set is sampled in the neighbhorhood of any node.
-            Masking 2. The second one is used for zero-padding, used during the evaluation of the softmax
+            Masking 2. The second one is used for zero-padding, used during the softmax computation
         """
         
         # Masking 1
@@ -155,16 +170,15 @@ class Data:
             
     def _fetch_current_batch(self, start, size, sources, targets, negatives):
         """
-        Prepares model inputs and organizes them into batches
+        Prepares model inputs using specified indices and organizes them into a batch
 
-        :param neighborhood_matrix:
-        :param mask_matrix:
-        :param sources:
-        :param targets:
-        :param negatives:
-        :param batch_size:
-        :param in_memory:
-        :return:
+        :param start: Starting index 
+        :param size: The number of edges
+        :param sources: Source nodes 
+        :param targets: Target nodes
+        :param negatives: Negative nodes
+        :param batch_size: Batch size
+        :return: A Batch input
         """
         end = start + self._batch_size if size - start > self._batch_size else size
         src, trg, neg = sources[start:end], targets[start:end], negatives[start:end]

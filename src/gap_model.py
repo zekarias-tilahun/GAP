@@ -12,6 +12,10 @@ class RankingLoss:
 
 
 class Encoder(nn.Module):
+    
+    """
+    The simplified Encoder of APN that only has an embedding component
+    """
 
     def __init__(self, in_dim, out_dim, rate):
         super(Encoder, self).__init__()
@@ -30,6 +34,10 @@ class Encoder(nn.Module):
 
 
 class GAP(nn.Module):
+    
+    """
+    GAP model
+    """
 
     def __init__(self, num_nodes, emb_dim, rate=0.5):
         super(GAP, self).__init__()
