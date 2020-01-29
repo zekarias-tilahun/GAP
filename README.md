@@ -1,5 +1,5 @@
 # GAP
-Implementation of GAP: Graph Neighborhood Attentive Pooling. 
+Implementation of GAP: Graph Neighborhood Attentive Pooling, https://arxiv.org/abs/2001.10394. A context-sensitve graph (network) representation learning algorithm that relies only on the structure of the graph.
 
 ### Requirements!
   - Python 3.6+
@@ -56,6 +56,22 @@ Whether the graph is directed or not. 1 for directed and 0 for undirected. Defau
 
 `--verbose:`. 
 Whether to turn on a verbose logger or not. 1 is on and 0 is off. Default is 1.
+
+Some Results
+------------
+
+| Algorithm     | Training ratio||||
+|---------------|----------|----------|----------|----------|
+|               | **15%**  | **35%**  | **55%**  | **75%**  |
+| DeepWalk      | 56.0     | 70.2     | 80.1     | 85.3     |
+| Node2Vec      | 55.0     | 66.4     | 77.6     | 85.6     |
+| AttentiveWalk | 64.2     | 81.0     | 87.1     | 92.4     |
+| TriDnr        | 85.9     | 90.5     | 91.3     | 93.0     |
+| CENE          | 72.1     | 84.6     | 89.4     | 93.9     |
+| CANE          | 86.8     | 92.2     | 94.6     | 95.6     |
+| DMTE          | 91.3     | 93.7     | 96.0     | 97.4     |
+| SPLITTER      | 65.4     | 73.7     | 80.1     | 83.9     |
+| GAP           | **95.8** | **97.1** | **97.6** | **97.8** |
 
 
 Citing
