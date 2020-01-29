@@ -6,6 +6,11 @@ Implementation of GAP: Graph Neighborhood Attentive Pooling, https://arxiv.org/a
   - PyTorch 1.3.1+
   - Numpy 1.17.2+
   - Networkx 2.3+
+  
+#### Optional Requirment 
+for evaluating node-clustering performance of algorithms
+  - scikit-learn 0.21.3+
+
 ## Usage
 #### Example usage
 ```sh
