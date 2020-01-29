@@ -17,7 +17,7 @@ OR
 $ bash run.sh
 ```
 
-### Input Parameters
+### Input Arguments
 
 
 `--input:`
