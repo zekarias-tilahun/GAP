@@ -60,18 +60,81 @@ Whether to turn on a verbose logger or not. 1 is on and 0 is off. Default is 1.
 Some Results
 ------------
 
-| Algorithm     | Training ratio||||
-|---------------|----------|----------|----------|----------|
-|               | **15%**  | **35%**  | **55%**  | **75%**  |
-| DeepWalk      | 56.0     | 70.2     | 80.1     | 85.3     |
-| Node2Vec      | 55.0     | 66.4     | 77.6     | 85.6     |
-| AttentiveWalk | 64.2     | 81.0     | 87.1     | 92.4     |
-| TriDnr        | 85.9     | 90.5     | 91.3     | 93.0     |
-| CENE          | 72.1     | 84.6     | 89.4     | 93.9     |
-| CANE          | 86.8     | 92.2     | 94.6     | 95.6     |
-| DMTE          | 91.3     | 93.7     | 96.0     | 97.4     |
-| SPLITTER      | 65.4     | 73.7     | 80.1     | 83.9     |
-| GAP           | **95.8** | **97.1** | **97.6** | **97.8** |
+<table>
+  <tr>
+    <th rowspan="2">Algorithm</th>
+    <th colspan="4">Training ratio</th>
+  </tr>
+  <tr>
+    <td><b>15%</b></td>
+    <td><b>35%</b></td>
+    <td><b>55%</b></td>
+    <td><b>75%</b></td>
+  </tr>
+  <tr>
+    <td>DeepWalk</td>
+    <td>56.0</td>
+    <td>70.2</td>
+    <td>80.1</td>
+    <td>85.3</td>
+  </tr>
+  <tr>
+    <td>Node2Vec</td>
+    <td>55.0</td>
+    <td>66.4</td>
+    <td>77.6</td>
+    <td>85.6</td>
+  </tr>
+  <tr>
+    <td>AttentiveWalk</td>
+    <td>64.2</td>
+    <td>81.0</td>
+    <td>87.1</td>
+    <td>92.4</td>
+  </tr>
+  <tr>
+    <td>TriDnr</td>
+    <td>85.9</td>
+    <td>90.5</td>
+    <td>91.3</td>
+    <td>93.0</td>
+  </tr>
+  <tr>
+    <td>CENE</td>
+    <td>72.1</td>
+    <td>84.6</td>
+    <td>89.4</td>
+    <td>93.9</td>
+  </tr>
+  <tr>
+    <td>CANE</td>
+    <td>86.8</td>
+    <td>92.2</td>
+    <td>94.6</td>
+    <td>95.6</td>
+  </tr>
+  <tr>
+    <td>DMTE</td>
+    <td>91.3</td>
+    <td>93.7</td>
+    <td>96.0</td>
+    <td>97.4</td>
+  </tr>
+  <tr>
+    <td>SPLITTER</td>
+    <td>65.4</td>
+    <td>73.7</td>
+    <td>80.1</td>
+    <td>83.9</td>
+  </tr>
+  <tr>
+    <td>GAP</td>
+      <td><b>95.8</b></td>
+      <td><b>97.1</b></td>
+      <td><b>97.6</b></td>
+      <td><b>97.8</b></td>
+  </tr>
+</table>
 
 
 Citing
