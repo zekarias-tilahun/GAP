@@ -76,63 +76,63 @@ An excerpt of the reported results for link-prediction on the cora dataset.
     <td><b>0.75</b></td>
   </tr>
   <tr>
-    <td>DeepWalk</td>
+    <td><a href="https://arxiv.org/abs/1403.6652">DeepWalk</a></td>
     <td>56.0</td>
     <td>70.2</td>
     <td>80.1</td>
     <td>85.3</td>
   </tr>
   <tr>
-    <td>Node2Vec</td>
+    <td><a href="https://arxiv.org/abs/1607.00653">Node2Vec</td>
     <td>55.0</td>
     <td>66.4</td>
     <td>77.6</td>
     <td>85.6</td>
   </tr>
   <tr>
-    <td>AttentiveWalk</td>
+    <td><a href="https://arxiv.org/abs/1710.09599">AttentiveWalk</td>
     <td>64.2</td>
     <td>81.0</td>
     <td>87.1</td>
     <td>92.4</td>
   </tr>
   <tr>
-    <td>TriDnr</td>
+    <td><a href="https://dl.acm.org/doi/10.5555/3060832.3060886">TriDnr</a></td>
     <td>85.9</td>
     <td>90.5</td>
     <td>91.3</td>
     <td>93.0</td>
   </tr>
   <tr>
-    <td>CENE</td>
+    <td><a href="https://arxiv.org/abs/1610.02906">CENE</a></td>
     <td>72.1</td>
     <td>84.6</td>
     <td>89.4</td>
     <td>93.9</td>
   </tr>
   <tr>
-    <td>CANE</td>
+    <td><a href="https://www.aclweb.org/anthology/P17-1158/">CANE</a></td>
     <td>86.8</td>
     <td>92.2</td>
     <td>94.6</td>
     <td>95.6</td>
   </tr>
   <tr>
-    <td>DMTE</td>
+    <td><a href="https://dl.acm.org/doi/10.5555/3327757.3327858">DMTE</a></td>
     <td>91.3</td>
     <td>93.7</td>
     <td>96.0</td>
     <td>97.4</td>
   </tr>
   <tr>
-    <td>SPLITTER</td>
+    <td><a href="https://arxiv.org/abs/1905.02138">SPLITTER</a></td>
     <td>65.4</td>
     <td>73.7</td>
     <td>80.1</td>
     <td>83.9</td>
   </tr>
   <tr>
-    <td>GAP</td>
+    <td><a href=".">GAP</a></td>
       <td><b>95.8</b></td>
       <td><b>97.1</b></td>
       <td><b>97.6</b></td>
