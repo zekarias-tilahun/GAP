@@ -70,10 +70,10 @@ An excerpt of the reported results for link-prediction on the cora dataset.
     <th colspan="4">Training ratio</th>
   </tr>
   <tr>
-    <td><b>15%</b></td>
-    <td><b>35%</b></td>
-    <td><b>55%</b></td>
-    <td><b>75%</b></td>
+    <td><b>0.15</b></td>
+    <td><b>0.35</b></td>
+    <td><b>0.55</b></td>
+    <td><b>0.75</b></td>
   </tr>
   <tr>
     <td>DeepWalk</td>
