@@ -2,6 +2,7 @@
 Implementation of GAP: Graph Neighborhood Attentive Pooling. 
 
 ### Requirements!
+  - Python 3.6+
   - PyTorch 1.3.1+
   - Numpy 1.17.2+
   - Networkx 2.3+
@@ -17,7 +18,7 @@ $ cd GAP
 $ bash run.sh
 ```
 
-### Possible Parameters
+### Input Parameters
 
 
 `--input:`
@@ -59,3 +60,13 @@ Whether to turn on a verbose logger or not. 1 is on and 0 is off. Default is 1.
 
 Citing
 ------
+```
+@misc{kefato2020graph,
+    title={Graph Neighborhood Attentive Pooling},
+    author={Zekarias T. Kefato and Sarunas Girdzijauskas},
+    year={2020},
+    eprint={2001.10394},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+```
