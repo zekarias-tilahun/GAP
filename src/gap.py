@@ -13,12 +13,6 @@ import gap_model
 import os
 
 
-def to_cpu_tensor(tensor, device):
-    if device == 'cpu':
-        return tensor.data.numpy()
-    return tensor.cpu().data.numpy()
-
-
 class GapWrapper:
     
     """
@@ -135,6 +129,13 @@ class GapWrapper:
                 for node in self.global_embedding:
                     output = '{} {}\n'.format(node, ' '.join(str(val) for val in self.global_embedding[node]))
                     f.write(output)
+
+                    
+def to_cpu_tensor(tensor, device):
+    if device == 'cpu':
+        return tensor.data.numpy()
+    return tensor.cpu().data.numpy()
+
 
 def main(args):
     gap_helper.VERBOSE = False if args.verbose == 0 else True

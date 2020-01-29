@@ -9,12 +9,11 @@ Implementation of GAP: Graph Neighborhood Attentive Pooling, https://arxiv.org/a
 ## Usage
 #### Example usage
 ```sh
-$ cd GAP
-$ python src/gap.py
+$ cd src
+$ python gap.py
 ```
 OR
 ```sh
-$ cd GAP
 $ bash run.sh
 ```
 
