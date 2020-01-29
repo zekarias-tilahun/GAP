@@ -132,7 +132,7 @@ An excerpt of the reported results for link-prediction on the cora dataset.
     <td>83.9</td>
   </tr>
   <tr>
-    <td><a href=".">GAP</a></td>
+    <td><a href="#">GAP</a></td>
       <td><b>95.8</b></td>
       <td><b>97.1</b></td>
       <td><b>97.6</b></td>
