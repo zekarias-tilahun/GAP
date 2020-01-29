@@ -80,7 +80,7 @@ def parse():
     parser.add_argument('--emb-path', required=True, type=str, help='Path to the embedding file')
     parser.add_argument('--te-path', type=str, default='', help='Path to the test edges file')
     parser.add_argument('--com-path', type=str, default='', help='Path to the ground truth community file')
-    parser.add_argument('--verbose', type=bool, default=True)
+    parser.add_argument('--verbose', type=int, default=1)
     return parser.parse_args()
 
 
