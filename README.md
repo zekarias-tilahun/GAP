@@ -32,7 +32,7 @@ A path to a graph file. Default is ```../data/cora/graph.txt```
 The format of the input graph, either ```edgelist``` or ```adjlist```. Default is ```edgelist```
 
 `--output-dir:`
-A path to a directory to save a trained model. Default is ```../data/cora/outputs```
+A path to a directory to save intermediate and final outputs of GAP. Default is ```../data/cora/outputs```
 
 `--dim:`
 The size (dimension) of nodes embedding (representation) vector. Default is 200.
